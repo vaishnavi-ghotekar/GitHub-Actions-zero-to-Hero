@@ -19,8 +19,8 @@ jobs:
 
       - name: say hello to user
         run: echo "Hello $USER"
-  # second job      
-  details:
+  # This is second job      
+  show-version:
     runs-on: ubuntu-latest
     steps:
       - name: show what is the version of python, docker etc
