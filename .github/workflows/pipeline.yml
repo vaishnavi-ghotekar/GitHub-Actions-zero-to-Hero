@@ -28,5 +28,4 @@ jobs:
         run: echo "deploying the code"
         
         
-  deploy:
   
