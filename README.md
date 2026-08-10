@@ -1,1 +1,1 @@
-# GitHub-zero-to-Hero
+# GitHub-Actions-zero-to-Hero
