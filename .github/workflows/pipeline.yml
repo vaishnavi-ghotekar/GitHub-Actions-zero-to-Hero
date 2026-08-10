@@ -1,0 +1,32 @@
+# name of the workflow
+name: pipeline
+on:
+  workflow_dispatch: # Manual click deliver worklow whenever user needs
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: checkout code
+        run: echo "clone code from the Github"
+        
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build docker container
+        run: echo "docker container build"    
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the container 
+        run: echo "testing the conatainer"
+        
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying the app 
+        run: echo "deploying the code"
+        
+        
+  deploy:
+  
