@@ -34,6 +34,7 @@
         - name: Test the container 
           run: echo "Testing the container"
    deploy:
+     if: inputs.environment == 'dev'
      needs: [test]
      runs-on: ubuntu-latest
      steps:
