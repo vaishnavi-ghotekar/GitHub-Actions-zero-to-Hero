@@ -1,1 +1,151 @@
-html.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f9f9f9;">
+
+    <!-- Navigation Header -->
+    <header style="background-color: #2c3e50; color: #fff; padding: 20px; position: sticky; top: 0; z-index: 100;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <h1 style="margin: 0; font-size: 24px;">Alex Doe</h1>
+                    <span style="color: #1abc9c;">Web Developer & Designer</span>
+                </td>
+                <td align="right">
+                    <nav>
+                        <a href="#about" style="color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold;">About</a>
+                        <a href="#skills" style="color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold;">Skills</a>
+                        <a href="#projects" style="color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold;">Projects</a>
+                        <a href="#contact" style="color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold;">Contact</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- Main Container -->
+    <main style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+
+        <!-- Hero / About Section -->
+        <section id="about" style="background: #fff; padding: 40px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="70%" valign="top" style="padding-right: 20px;">
+                        <h2 style="color: #2c3e50; margin-top: 0;">Hello, I'm Alex</h2>
+                        <p style="font-size: 18px; color: #555;">I build clean, beautiful, and responsive web applications. Passionate about turning complex problems into elegant user experiences.</p>
+                        <p>Welcome to my digital space. Here you will find a curated selection of my recent work, core professional competencies, and ways to get in touch for potential collaborations.</p>
+                        <br>
+                        <a href="#contact" style="background-color: #1abc9c; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">Hire Me</a>
+                    </td>
+                    <td width="30%" align="center" valign="middle">
+                        <!-- Replace URL with your actual image path -->
+                        <img src="https://placeholder.com" alt="Alex Doe Profile Picture" style="border-radius: 50%; border: 5px solid #1abc9c; width: 200px; height: 200px; object-fit: cover;">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="background: #fff; padding: 40px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #1abc9c; padding-bottom: 10px; margin-top: 0;">My Skills</h2>
+            <table width="100%" border="0" cellspacing="20" cellpadding="0" style="margin: -20px;">
+                <tr>
+                    <td width="33%" valign="top">
+                        <h3 style="color: #e67e22; margin-bottom: 5px;">Frontend</h3>
+                        <ul style="padding-left: 20px; margin-top: 5px;">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </td>
+                    <td width="33%" valign="top">
+                        <h3 style="color: #9b59b6; margin-bottom: 5px;">Backend</h3>
+                        <ul style="padding-left: 20px; margin-top: 5px;">
+                            <li>Node.js</li>
+                            <li>Python / Django</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </td>
+                    <td width="33%" valign="top">
+                        <h3 style="color: #3498db; margin-bottom: 5px;">Tools & Other</h3>
+                        <ul style="padding-left: 20px; margin-top: 5px;">
+                            <li>Git & GitHub</li>
+                            <li>SQL Databases</li>
+                            <li>UI/UX Prototyping</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="background: #fff; padding: 40px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #1abc9c; padding-bottom: 10px; margin-top: 0;">Featured Projects</h2>
+            
+            <!-- Project 1 -->
+            <div style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 6px; margin-bottom: 20px; background-color: #fafafa;">
+                <h3 style="margin-top: 0; color: #2c3e50;">E-Commerce Platform</h3>
+                <p style="color: #666; font-size: 14px;"><strong>Technologies:</strong> Node.js, Express, MongoDB</p>
+                <p>A full-featured online store handling user authentication, product catalogs, shopping carts, and integrated secure payment processing pathways.</p>
+                <a href="#" target="_blank" style="color: #1abc9c; font-weight: bold; text-decoration: none;">View Live Demo &rarr;</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 6px; margin-bottom: 20px; background-color: #fafafa;">
+                <h3 style="margin-top: 0; color: #2c3e50;">Weather Analytics Dashboard</h3>
+                <p style="color: #666; font-size: 14px;"><strong>Technologies:</strong> Vanilla JavaScript, OpenWeather API</p>
+                <p>A dynamic analytics app displaying live weather tracking metrics, geographical interactive maps, and localized historical meteorological charts.</p>
+                <a href="#" target="_blank" style="color: #1abc9c; font-weight: bold; text-decoration: none;">View on GitHub &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="background: #fff; padding: 40px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #1abc9c; padding-bottom: 10px; margin-top: 0;">Get In Touch</h2>
+            <p>Have an interesting project or a role you'd like to discuss? Drop me a line directly through the form below.</p>
+            
+            <form action="#" method="POST" style="margin-top: 20px;">
+                <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                    <tr>
+                        <td width="50%">
+                            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Your Name</label>
+                            <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                        </td>
+                        <td width="50%">
+                            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email Address</label>
+                            <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Message</label>
+                            <textarea name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: Arial, sans-serif;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" style="background-color: #2c3e50; color: white; padding: 12px 30px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Send Message</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #2c3e50; color: #fff; text-align: center; padding: 20px; font-size: 14px;">
+        <p style="margin: 0 0 10px 0;">&copy; 2026 Alex Doe. All rights reserved.</p>
+        <div>
+            <a href="#" style="color: #1abc9c; text-decoration: none; margin: 0 10px;">GitHub</a> | 
+            <a href="#" style="color: #1abc9c; text-decoration: none; margin: 0 10px;">LinkedIn</a> | 
+            <a href="#" style="color: #1abc9c; text-decoration: none; margin: 0 10px;">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
