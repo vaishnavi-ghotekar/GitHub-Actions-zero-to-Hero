@@ -5,6 +5,9 @@ name: hello
 on:
   push:
     branches: [main]
+  # paths defines, it controls which file/folder changes should trigger a workflow. 
+    paths:
+      - '**.html'
     
 # These are the jobs inside the workflow 
 jobs:
