@@ -4,7 +4,16 @@
  # Manual click (deliver) workflow whenever user needs
  on: 
    workflow_dispatch:
-
+     inputs:
+       environment:
+         description: this is the environment value where this workflow runs
+         default: 'dev'
+         required: true
+         type: choice
+         options:
+           - dev
+           - prod
+           - staging 
  jobs:
  # EVERY JOB NEEDS SEPERATE RUNNER IT'S CALLED PARALLELISM
    code:
