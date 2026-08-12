@@ -16,24 +16,24 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{ steps.deploy-pages.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      # Step 1: Get the portfolio code
-      - name: Checkout code
-        uses: actions/checkout@v4
+      # 1. Get portfolio code
+      - name: Checkout
+        uses: actions/checkout@v6
 
-      # Step 2: Configure GitHub Pages
-      - name: Setup GitHub Pages
+      # 2. Configure GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Step 3: Upload the static website files
-      - name: Upload static files
+      # 3. Upload portfolio
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
 
-      # Step 4: Deploy the website
+      # 4. Deploy
       - name: Deploy to GitHub Pages
-        id: deploy-pages
+        id: deployment
         uses: actions/deploy-pages@v4
