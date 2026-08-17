@@ -5,7 +5,7 @@ on:
         branches: [main]
 
 jobs:
-    build and push:
+    build-and-push:
         runs-on: ubuntu-latest
         
         steps:
@@ -24,6 +24,7 @@ jobs:
                 context: .
                 push: true
                 tags: |
-                   ${{ vars.DOCKERHUB_USER}}/github-actions-app:${{ github.ref }}
-                   ${{ vars.DOCKERHUB_USER}}/github-actions-app:${{ github.sha }}
+                   ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.ref }}
+                   ${{ vars.DOCKERHUB_USER }}/github-action-app:latest
+                   ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.sha }}
 
