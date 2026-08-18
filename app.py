@@ -13,9 +13,4 @@ def hello_world():
 def health():
     return 'Server is up and running'
 
-
-if __name__ == '__main__':
-    debug_mode = os.environ.get('FLASK_DEBUG', 'false').lower() == 'true'
-    host = os.environ.get('FLASK_HOST', '0.0.0.0')  # nosec B104
-    port = int(os.environ.get('FLASK_PORT', '80'))
-    app.run(debug=debug_mode, host=host, port=port)
+app.run(debug=True, host='0.0.0.0', port=80)
