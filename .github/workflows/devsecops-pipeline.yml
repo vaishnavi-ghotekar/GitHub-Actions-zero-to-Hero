@@ -13,12 +13,12 @@ jobs:
     dependency-scan:
         uses: ./.github/workflows/dependency-scan.yml
 
-    docker-scan: 
+    docker-lint: 
         uses: ./.github/workflows/docker-lint.yml
     
         # Build once the security scans are completed
     build: 
-        needs: [code-quality, secrets-scan, dependency-scan, docker-scan]
+        needs: [code-quality, secrets-scan, dependency-scan, docker-lint]
         uses: ./.github/workflows/docker-build-push.yml
         secrets: inherit
     trivy:
